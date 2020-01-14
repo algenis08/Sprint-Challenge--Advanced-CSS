@@ -1,1 +1,34 @@
 // Navigation code here
+.head-title{
+    .display-flex(center,center);
+    flex-direction: column;
+    font-size: 5rem;
+    background-color: @nav-bg;
+    
+}
+.navbar{
+    .display-flex(center, center);
+    background-color: @nav-bg;
+    
+ nav {
+    .display-flex(center, center);
+    margin: 1% 1%;
+    width: 41%;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        width: 99%;
+        
+    }
+        
+          
+a{
+    .clickable(@nav-bg);
+    width: 18%;
+    font-size: 2rem;
+    color:@nav-font;
+    text-decoration: none;
+
+    }
+  }
+ }
